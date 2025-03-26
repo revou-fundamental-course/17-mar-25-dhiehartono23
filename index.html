@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="shortcut icon" href="assets/f1.png" />
+    <title>KALTIK | Kalkulator MAtematik</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="assets/f1.png" alt="Logo" class="logo" />
+      <div class="judul">Katik</div>
+      <div class="teksjudul">Kalkulator Matematik</div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="welcome">Welcome to Katik</div>
+      <div class="say">Hai Sobat! Selamat datang di Katik :]</div>
+      <div class="des">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</div>
+      <!-- Pilihan Bentuk -->
+      <section id="pilihanBentuk">
+        <button onclick="pilihBentuk('persegi')">Persegi</button>
+        <button onclick="pilihBentuk('persegiPanjang')">Persegi Panjang</button>
+      </section>
+
+      <!-- Pilihan Operasi -->
+      <section id="pilihanOperasi" style="display: none">
+        <h2>Pilih Operasi Hitung</h2>
+        <button onclick="pilihOperasi('luas')">Luas</button>
+        <button onclick="pilihOperasi('keliling')">Keliling</button>
+      </section>
+
+      <!-- Rumus dan Gambar -->
+      <section id="rumus" style="display: none">
+        <h2>Rumus</h2>
+        <img id="gambarRumus" src="" alt="Gambar Rumus" />
+        <p id="teksRumus"></p>
+      </section>
+
+      <!-- Input Nilai -->
+      <div class="input-container">
+        <section id="inputNilai" style="display: none">
+          <h2>Masukkan Nilai</h2>
+          <div id="inputPersegi" style="display: none">
+            <label for="sisi">Sisi:</label>
+            <input type="number" id="sisi" placeholder="Masukkan panjang sisi" />
+          </div>
+          <div id="inputPersegiPanjang" style="display: none">
+            <label for="panjang">Panjang:</label>
+            <input type="number" id="panjang" placeholder="Masukkan panjang" />
+            <label for="lebar">Lebar:</label>
+            <input type="number" id="lebar" placeholder="Masukkan lebar" />
+          </div>
+          <div class="button-container">
+            <button class="btn-hitung" onclick="hitung()">Hitung</button>
+            <button class="btn-reset" onclick="resetForm()">Reset</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Hasil Perhitungan -->
+      <div class="Hasilhitung">
+        <section id="hasil" style="display: none">
+          <h2>Hasil</h2>
+          <p id="teksHasil"></p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-social-icons">
+        <div class="icon">
+          <a href="https://www.instagram.com/dhiehartono23/" target="_blank"><i class="uil uil-instagram"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/rudi-hartono" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://dribbble.com/dhiehartono" target="_blank"><i class="uil uil-dribbble"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://github.com/dhiehartono23" target="_blank"><i class="uil uil-github-alt"></i></a>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="" style="text-decoration: none">Rudi Hartono</a> - All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- TYPING JS Link -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- SCROLL REVEAL JS Link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JS External -->
+    <script src="Javascript/script.js"></script>
+  </body>
+</html>
